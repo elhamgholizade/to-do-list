@@ -2,14 +2,18 @@ body {
     background-color: pink;
     margin: 0;
     padding: 0;
+
 }
 
 .container {
+
     display: flex;
     width: 300px;
     height: 200px;
+    align-items: center;
     flex-direction: column;
     justify-content: center;
+
 }
 
 .to-do {
@@ -19,4 +23,16 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+ul {
+    list-style: none;
+}
+
+#list {
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    position: relative;
+
 }
