@@ -7,12 +7,16 @@ button.addEventListener("click", function () {
         let TaskList = document.querySelector("#list ul");
         TaskList.appendChild(listItem);
         input.value = "";
+        listItem.addEventListener("click", function () {
+            listItem.style.textDecoration = "line-through";
+        });
+        listItem.addEventListener("dblclick", function () {
+            TaskList.removeChild(listItem);
+        });
     }
     else {
         alert("eror");
     }
 
 })
-listItem.addEventListener("click", function () {
-    listItem.style.TextDecoration = "line-through";
-});
+
