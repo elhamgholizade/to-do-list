@@ -11,4 +11,8 @@ button.addEventListener("click", function () {
     else {
         alert("eror");
     }
+
 })
+listItem.addEventListener("click", function () {
+    listItem.style.TextDecoration = "line-through";
+});
